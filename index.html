@@ -7,12 +7,13 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Frontend Mentor | QR code component</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | 3-column preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -24,88 +25,39 @@
         .attribution a {
             color: hsl(228, 45%, 44%);
         }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-size: 15px;
-            background-color: hsl(212, 45%, 89%);
-        }
-
-        .container {
-            display: flex;
-            justify-content: start;
-            flex-direction: column;
-            width: 80vw;
-            height: 70vh;
-            margin: 10em 1em;
-            background-color: hsl(0, 0%, 100%);
-            border-radius: 1rem;
-            text-align: center;
-        }
-
-        .position {
-            margin: 1rem;
-        }
-
-        .position img {
-            width: 100%;
-            height: 100%;
-            border-radius: 1rem;
-        }
-
-        h3 {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: hsl(218, 44%, 22%);
-        }
-
-        p {
-            font-size: 15px;
-            margin: auto 1rem;
-        }
-
-        @media (min-width: 1440px) {
-            .container {
-                width: 20%;
-                height: auto;
-            }
-
-            .position {
-                margin: 1rem;
-            }
-
-            .position img {
-                width: 100%;
-                height: 100%;
-                border-radius: 1rem;
-            }
-        }
     </style>
 </head>
 
 <body>
-
-    <section class="container">
-
-        <div class="position">
-            <img src="./images/image-qr-code.png">
+    <main>
+        <div class="Item Item1">
+            <img src="./images/icon-sedans.svg" alt="Sedans">
+            <h3>SEDANS</h3>
+            <p>
+                Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+            or on your next road trip.
+            </p>
+            <button id="bt1">Learn More</button>
         </div>
-        <div class="position">
-            <h3 style="color: hsl(218, 44%, 22%); font-family: Outfit, sans-serif; font-weight: 700;">Improve your
-                front-end skills by building projects</h3>
+        <div class="Item Item2">
+            <img src="./images/icon-suvs.svg" alt="Suvs">
+            <h3>SUVS</h3>
+            <p>
+                Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+                and off-road adventures.
+            </p>
+            <button id="bt2">Learn More</button>
         </div>
-        <div class="position">
-            <p style="color: hsl(220, 15%, 55%); font-family: Outfit, sans-serif; font-weight: 400;">Scan the QR code to
-                visit Frontend Mentor and take your coding skills to the next level</p>
+        <div class="Item Item3">
+            <img src="./images/icon-luxury.svg" alt="Suvs">
+            <h3>LUXURY</h3>
+            <p>
+                Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+                rental and arrive in style.
+            </p>
+            <button id="bt3">Learn More</button>
         </div>
-    </section>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </main>
 </body>
 
 </html>

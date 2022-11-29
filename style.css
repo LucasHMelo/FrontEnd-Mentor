@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap);
+@import './constants.css';
+
+body,
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: var(--VeryLightGray);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryLightGray);
+}
+
+.Item {
+    max-width: 250px;
+    padding: 2.5rem;
+    line-height: 1.5
+}
+
+.Item1 {
+    background-color: var(--BrightOrange);
+    border-radius: 8px 8px 0 0;
+
+}
+
+.Item2 {
+    background-color: var(--DarkCyan);
+
+}
+
+.Item3 {
+    background-color: var(--VeryDarkCyan);
+    border-radius: 0 0 8px 8px;
+}
+
+button {
+    background-color: var(--VeryLightGray);
+    border: 1px;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    margin: 1rem auto;
+}
+
+button:hover {
+    background-color: var(--VeryLightGray);
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--VeryLightGray);
+    margin: 2.5rem auto;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--TransparentWhite);
+    margin: 2.5rem auto;
+}
+
+#bt1 {
+    color: var(--BrightOrange);
+}
+
+#bt2 {
+    color: var(--DarkCyan);
+}
+
+#bt3 {
+    color: var(--VeryDarkCyan);
+}
+
+#bt1:hover {
+    background-color: var(--BrightOrange);
+    color: var(--TransparentWhite);
+}
+
+#bt2:hover {
+    background-color: var(--DarkCyan);
+    color: var(--TransparentWhite);
+}
+
+#bt3:hover {
+    background-color: var(--VeryDarkCyan);
+    color: var(--TransparentWhite);
+}
+
+
+@media (min-width: 1440px) {
+
+    body,
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Item1 {
+        background-color: var(--BrightOrange);
+        border-radius: 8px 0 0 8px;
+    
+    }
+    
+    .Item3 {
+        background-color: var(--VeryDarkCyan);
+        border-radius: 0 8px 8px 0;
+    }
+}
