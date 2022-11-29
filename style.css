@@ -6,12 +6,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100hv;
+
 }
 
 body {
     display: flex;
     align-items: center;
     background-color: var(--VeryLightGray);
+    height: 100vh;
 }
 
 main {
@@ -24,7 +27,8 @@ main {
 .Item {
     max-width: 250px;
     padding: 2.5rem;
-    line-height: 1.5
+    line-height: 1.5;
+    position: relative;
 }
 
 .Item1 {
@@ -58,6 +62,10 @@ button:hover {
     padding: 1rem 2.5rem;
     cursor: pointer;
 }
+
+button:active {
+    transform: scale(0.2);
+  }
 
 h3 {
     font-family: 'Big Shoulders Display', cursive;
