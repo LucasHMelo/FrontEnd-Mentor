@@ -2,62 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Frontend Mentor | 3-column preview card component</title>
+  <title>Frontend Mentor | Product preview card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 </head>
 
 <body>
-    <main>
-        <div class="Item Item1">
-            <img src="./images/icon-sedans.svg" alt="Sedans">
-            <h3>SEDANS</h3>
-            <p>
-                Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
-            or on your next road trip.
-            </p>
-            <button id="bt1">Learn More</button>
-        </div>
-        <div class="Item Item2">
-            <img src="./images/icon-suvs.svg" alt="Suvs">
-            <h3>SUVS</h3>
-            <p>
-                Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
-                and off-road adventures.
-            </p>
-            <button id="bt2">Learn More</button>
-        </div>
-        <div class="Item Item3">
-            <img src="./images/icon-luxury.svg" alt="Suvs">
-            <h3>LUXURY</h3>
-            <p>
-                Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-                rental and arrive in style.
-            </p>
-            <button id="bt3">Learn More</button>
-        </div>
-    </main>
+  <section class="box">
+    <div class="img-div">
+      <picture>
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 650px)" >
+        <img src="./images/image-product-mobile.jpg" alt="Perfume">
+    </picture>
+    </div>
+    <div class="info-div">
+      <p class="font-mont alt-min" style="font-weight: 700; letter-spacing: 5px;">PERFUME</p>
+
+      <h3 class="font-fraunces alt-min" style="font-size: 1.8rem;font-weight: 700; ">Gabrielle Essence Eau De Parfum</h3>
+
+      <p class="font-mont alt-min" style="font-weight: 500;" >A floral, solar and voluptuous interpretation composed by
+        Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+
+      <div class="price-row alt-min">
+        <p class="para font-fraunces" style="font-size: 1.5rem;font-weight: 700; color: darkcyan;">$149.99</p>
+        <p class="para font-fraunces" style="text-decoration-line: line-through;color: darkgray;">$169.99</p>
+      </div>
+
+
+      <button class="alt-min btn-decoration"><i class="icon-cart"></i><p>Add to Cart</p></button>
+    </div>
+
+
+  </section>
+
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
 </body>
 
 </html>

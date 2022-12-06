@@ -1,133 +1,114 @@
-@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap);
-@import './constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
 
-body,
-main {
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100hv;
-
-}
-
-body {
-    display: flex;
     align-items: center;
-    background-color: var(--VeryLightGray);
+    background-color: var(--cream);
     height: 100vh;
 }
 
-main {
+img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--white);
+    height: 90vh;
+    max-width: 90vw;
+    border-radius: 15px;
+}
+
+.img-div{
+    flex: 1;
+}
+
+.price-row{
+    display: flex;
+    align-items: stretch;
+}
+
+.btn-decoration{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--VeryLightGray);
-}
-
-.Item {
-    max-width: 250px;
-    padding: 2.5rem;
-    line-height: 1.5;
-    position: relative;
-}
-
-.Item1 {
-    background-color: var(--BrightOrange);
-    border-radius: 8px 8px 0 0;
+    border: 0;
+    background-color: var(--darkCyan);
+    width: 90%;
+    height: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
 
 }
 
-.Item2 {
-    background-color: var(--DarkCyan);
-
-}
-
-.Item3 {
-    background-color: var(--VeryDarkCyan);
-    border-radius: 0 0 8px 8px;
-}
-
-button {
-    background-color: var(--VeryLightGray);
-    border: 1px;
-    border-radius: 1rem;
-    padding: 1rem 2.5rem;
-    margin: 1rem auto;
-}
-
-button:hover {
-    background-color: var(--VeryLightGray);
-    border: 1px solid white;
-    border-radius: 1rem;
-    padding: 1rem 2.5rem;
+.btn-decoration:hover{
+    background-color: var(--veryDarkBlue);
     cursor: pointer;
 }
 
-button:active {
-    transform: scale(0.2);
-  }
-
-h3 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--VeryLightGray);
-    margin: 2.5rem auto;
+.icon-cart {
+    background: url('./images/icon-cart.svg');
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    /* Other styles here */
 }
 
-p {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--TransparentWhite);
-    margin: 2.5rem auto;
+.info-div{
+    padding: 15px;
+    flex: 2;
 }
 
-#bt1 {
-    color: var(--BrightOrange);
+.para{
+    flex: 1;
 }
 
-#bt2 {
-    color: var(--DarkCyan);
+.font-mont{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkGrayishBlue);
 }
 
-#bt3 {
-    color: var(--VeryDarkCyan);
+.alt-min{
+    margin: 16px;
 }
 
-#bt1:hover {
-    background-color: var(--BrightOrange);
-    color: var(--TransparentWhite);
+.font-fraunces{
+    font-family: 'Fraunces', sans-serif;
 }
 
-#bt2:hover {
-    background-color: var(--DarkCyan);
-    color: var(--TransparentWhite);
-}
-
-#bt3:hover {
-    background-color: var(--VeryDarkCyan);
-    color: var(--TransparentWhite);
-}
-
-
-@media (min-width: 1440px) {
-
-    body,
-    main {
+@media (min-width: 650px) {
+    .box{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
+        align-items: center;
+        background-color: var(--white);
+        height: 60vh;
+        max-width: 40vw;
+        border-radius: 15px;
     }
 
-    .Item1 {
-        background-color: var(--BrightOrange);
-        border-radius: 8px 0 0 8px;
-    
+    .img-div{
+        flex: 1;
     }
-    
-    .Item3 {
-        background-color: var(--VeryDarkCyan);
-        border-radius: 0 8px 8px 0;
+    .info-div{
+        flex: 1;
     }
 }
