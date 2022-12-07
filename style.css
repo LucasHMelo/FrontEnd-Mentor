@@ -48,14 +48,41 @@ main {
     border-radius: inherit;
 }
 
+.card__img--layer {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    background: rgba(0, 255, 247, 0.5);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+.card__img:hover ~ .card__img--layer{
+    display: flex;
+}
+
 .card__title {
     font-weight: 700;
     font-size: larger;
     color: var(--White);
 }
 
+.card__title:hover {
+    cursor: pointer;
+}
+
 .card__text {
     color: var(--Softblue);
+}
+
+.card__hover-cyan:hover {
+    color: var(--Cyan);
 }
 
 .card__price {
