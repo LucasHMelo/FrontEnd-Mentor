@@ -1,114 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
 
 :root {
-    --darkCyan: hsl(158, 36%, 37%);
-    --cream: hsl(30, 38%, 92%);
-    --veryDarkBlue: hsl(212, 21%, 14%);
-    --darkGrayishBlue: hsl(228, 12%, 48%);
-    --white: hsl(0, 0%, 100%);
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VeryDBMain: hsl(217, 54%, 11%);
+    --VeryDBCard: hsl(216, 50%, 16%);
+    --VeryLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
 }
 
-body{
+body,
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--cream);
+    background-color: var(--VeryDBMain);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+main {
     height: 100vh;
-}
-
-img{
     width: 100%;
-    border-radius: 15px 15px 0 0 ;
 }
 
-.box{
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    background-color: var(--white);
-    height: 90vh;
-    max-width: 90vw;
-    border-radius: 15px;
+    background-color: var(--VeryDBCard);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    max-width: 300px;
+    gap: 1.2rem;
+    margin: 1.2rem;
+    box-shadow: 0px 30px 25px rgb(0 0 0 / 0.5);
 }
 
-.img-div{
-    flex: 1;
+.card__img {
+    width: 100%;
+    border-radius: inherit;
 }
 
-.price-row{
-    display: flex;
+.card__title {
+    font-weight: 700;
+    font-size: larger;
+    color: var(--White);
+}
+
+.card__text {
+    color: var(--Softblue);
+}
+
+.card__price {
+    color: var(--Cyan);
+}
+
+.card__time {
+    color: var(--Softblue);
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: stretch;
 }
 
-.btn-decoration{
-    display: flex;
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     justify-content: center;
     align-items: center;
-    border: 0;
-    background-color: var(--darkCyan);
-    width: 90%;
-    height: 3.5rem;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+
+}
+
+.card__line {
+    height: 1px;
+    background: var(--VeryLine);
+}
+
+.card__author {
+    color: var(--Softblue);
+    font-weight: 300;
+}
+
+.card__authorImg {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.attribution {
+    font-size: 11px;
     text-align: center;
-    border-radius: 8px;
-
 }
 
-.btn-decoration:hover{
-    background-color: var(--veryDarkBlue);
-    cursor: pointer;
-}
-
-.icon-cart {
-    background: url('./images/icon-cart.svg');
-    height: 20px;
-    width: 20px;
-    display: block;
-    background-repeat: no-repeat;
-    /* Other styles here */
-}
-
-.info-div{
-    padding: 15px;
-    flex: 2;
-}
-
-.para{
-    flex: 1;
-}
-
-.font-mont{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--darkGrayishBlue);
-}
-
-.alt-min{
-    margin: 16px;
-}
-
-.font-fraunces{
-    font-family: 'Fraunces', sans-serif;
-}
-
-@media (min-width: 650px) {
-    .box{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        background-color: var(--white);
-        height: 60vh;
-        max-width: 40vw;
-        border-radius: 15px;
-    }
-
-    .img-div{
-        flex: 1;
-    }
-    .info-div{
-        flex: 1;
-    }
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }

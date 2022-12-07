@@ -4,65 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
+ 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
 
-
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-  <section class="box">
-    <div class="img-div">
-      <picture>
-        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 650px)" >
-        <img src="./images/image-product-mobile.jpg" alt="Perfume">
-    </picture>
-    </div>
-    <div class="info-div">
-      <p class="font-mont alt-min" style="font-weight: 700; letter-spacing: 5px;">PERFUME</p>
+  <main>
+    <section class="container">
+      <img class="card__img" src="./images/image-equilibrium.jpg" alt="Equilibrium">
+      <h1 class="card__title">Equilibrium #3429</h1>
 
-      <h3 class="font-fraunces alt-min" style="font-size: 1.8rem;font-weight: 700; ">Gabrielle Essence Eau De Parfum</h3>
-
-      <p class="font-mont alt-min" style="font-weight: 500;" >A floral, solar and voluptuous interpretation composed by
-        Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.</p>
-
-      <div class="price-row alt-min">
-        <p class="para font-fraunces" style="font-size: 1.5rem;font-weight: 700; color: darkcyan;">$149.99</p>
-        <p class="para font-fraunces" style="text-decoration-line: line-through;color: darkgray;">$169.99</p>
+      <p class="card__text">Our Equilibrium collection promotes balance and calm.</p> 
+      <div class="row">
+        <p class="card__price"><img src="./images/icon-ethereum.svg">&nbsp0.041 ETH</p>
+        <p class="card__time"><img src="./images/icon-clock.svg">&nbsp3 days left</p>
       </div>
-
-
-      <button class="alt-min btn-decoration"><i class="icon-cart"></i><p>Add to Cart</p></button>
-    </div>
-
-
-  </section>
-
-
-
-  <footer class="attribution">
+      <div class="card__line"></div>
+      <div class="row-2 card__author"><img class="card__authorImg" src="./images/image-avatar.png"><p>Creation of <a href="#" style="color: white;">Jules Wyvern</a> </p> 
+    </section>
+  </main>
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+    Coded by <a href="#">Lucas Melo</a>.
+  </div>
 </body>
 
 </html>
