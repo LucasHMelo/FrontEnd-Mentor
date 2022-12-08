@@ -100,10 +100,12 @@ main {
 @media (min-width: 600px) {
 
 
-    body {        
-        margin: 2.5rem;
+    body {  
+        min-height: 100vh;      
+        margin: 0;
         flex-direction: column;
         background-image: url('images/bg-desktop.svg');
+        background-size: contain;
         background-color: var(--Violet);
     }
 
@@ -117,14 +119,16 @@ main {
         grid-template-rows: 0.8fr 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        margin: 3rem;
+        margin: 1rem;
         margin-left: 5rem;
         height: 100%;
     }
 
     .header__logo {
         margin-left: 9rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+
     }
 
     .header__logo img {
