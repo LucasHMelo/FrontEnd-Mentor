@@ -42,8 +42,9 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     overflow: hidden;
     background-color: var(--darkCyan);
-    background-image: url('./images/bg-pattern-bottom.svg'), url('images/bg-pattern-top.svg');
-    background-position: right bottom, left top;
+    background-image: url('./images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 40vh, left 50vw top 40vh;
     background-repeat: no-repeat,no-repeat;
     
 }
@@ -56,8 +57,8 @@ main{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: 400px;
-    width: 350px;
+    height: 375px;
+    width: 325px;
     border-radius: 16px;
 }
 
@@ -71,11 +72,11 @@ main{
 
 .card-profiler__img{
     background-image: url("./images/image-victor.jpg");
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
-    top: -12%;
-    left: 35%;
+    left: 48%;
+    top:40%;
     border-radius: 50%;
     border: 5px solid white;
     margin: 0;
@@ -88,8 +89,8 @@ main{
     justify-content: space-around;
     align-items: center;
     width: inherit;
-    height: 40%;
-    margin-bottom: 1rem;
+    height: 50%;
+    margin-top: 4rem;
     
 }
 
